@@ -1,9 +1,7 @@
-package com.example.demo;
+package com.example.demo.classroom;
 
 import java.util.Iterator;
 import java.util.List;
-import java.util.Spliterator;
-import java.util.function.Consumer;
 
 public class Instructors<Instructor> extends People {
 

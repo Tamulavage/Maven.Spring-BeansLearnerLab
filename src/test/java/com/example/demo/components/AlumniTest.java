@@ -1,7 +1,7 @@
 package com.example.demo.components;
 
-import com.example.demo.Instructor;
-import com.example.demo.Student;
+import com.example.demo.classroom.Instructor;
+import com.example.demo.classroom.Student;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

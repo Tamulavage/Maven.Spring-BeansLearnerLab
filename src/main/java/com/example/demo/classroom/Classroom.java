@@ -1,4 +1,6 @@
-package com.example.demo;
+package com.example.demo.classroom;
+
+import com.example.demo.classroom.interfaces.Teacher;
 
 public class Classroom {
     public Instructors getInstructors() {

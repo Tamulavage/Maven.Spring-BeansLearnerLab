@@ -1,4 +1,6 @@
-package com.example.demo;
+package com.example.demo.classroom;
+
+import com.example.demo.classroom.interfaces.Learner;
 
 public class Student extends Person implements Learner {
 

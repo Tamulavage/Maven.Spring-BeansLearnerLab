@@ -1,7 +1,6 @@
 package com.example.demo.configurations;
 
-import com.example.demo.Classroom;
-import com.example.demo.Instructor;
+import com.example.demo.classroom.Classroom;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -19,16 +18,16 @@ public class ClassroomConfig {
 
     @Bean
     @Qualifier("currentClass")
-    @DependsOn({"instructors","currentStudents"})
+    @DependsOn({"instructors", "currentStudents"})
     public Classroom currentCohort() {
-        return  new Classroom(instructorsConfig.instructors(), studentConfig.currentStudents());
+        return new Classroom(instructorsConfig.instructors(), studentConfig.currentStudents());
     }
 
     @Bean
     @Qualifier("previousClass")
-    @DependsOn({"instructors","previousStudents"})
+    @DependsOn({"instructors", "previousStudents"})
     public Classroom previousCohort() {
 
-        return  new Classroom(instructorsConfig.instructors(), studentConfig.previousStudents());
+        return new Classroom(instructorsConfig.instructors(), studentConfig.previousStudents());
     }
 }

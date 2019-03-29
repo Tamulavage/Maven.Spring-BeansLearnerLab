@@ -1,7 +1,7 @@
 package com.example.demo.configurations;
 
-import com.example.demo.Instructor;
-import com.example.demo.Instructors;
+import com.example.demo.classroom.Instructor;
+import com.example.demo.classroom.Instructors;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -16,12 +16,12 @@ public class InstructorsConfig {
     private String[] ukNames = {"Dolio", "Nhu"};
 
     @Bean
-    public Instructors tcUsaInstructors(){
+    public Instructors tcUsaInstructors() {
         return getInstructors(usaNames);
     }
 
     @Bean
-    public Instructors tcUkInstructors(){
+    public Instructors tcUkInstructors() {
         return getInstructors(ukNames);
     }
 
@@ -38,9 +38,9 @@ public class InstructorsConfig {
 
     @Bean
     @Primary
-    public Instructors instructors(){
-        String[] instructors = new String[usaNames.length+ ukNames.length];
-        System.arraycopy(usaNames,0, instructors, 0, usaNames.length);
+    public Instructors instructors() {
+        String[] instructors = new String[usaNames.length + ukNames.length];
+        System.arraycopy(usaNames, 0, instructors, 0, usaNames.length);
         System.arraycopy(ukNames, 0, instructors, usaNames.length, ukNames.length);
 
         return getInstructors(instructors);

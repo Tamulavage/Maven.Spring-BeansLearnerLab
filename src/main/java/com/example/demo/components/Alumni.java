@@ -1,9 +1,9 @@
 package com.example.demo.components;
 
-import com.example.demo.Instructor;
-import com.example.demo.Instructors;
-import com.example.demo.Student;
-import com.example.demo.Students;
+import com.example.demo.classroom.Instructor;
+import com.example.demo.classroom.Instructors;
+import com.example.demo.classroom.Student;
+import com.example.demo.classroom.Students;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
@@ -40,8 +40,8 @@ public class Alumni {
         int numberOfInstructors = instructors.size();
         int numberOfStudents = students.size();
         double numberOfHoursToTeachEachStudent = 1200;
-        double numberOfHoursToTeach = numberOfHoursToTeachEachStudent*numberOfStudents;
-        double numberOfHoursPerInstructor = numberOfHoursToTeach/numberOfInstructors;
+        double numberOfHoursToTeach = numberOfHoursToTeachEachStudent * numberOfStudents;
+        double numberOfHoursPerInstructor = numberOfHoursToTeach / numberOfInstructors;
 
         classInstructors.forEach(instructor -> instructor.setTotalTimeTeached(numberOfHoursPerInstructor));
 

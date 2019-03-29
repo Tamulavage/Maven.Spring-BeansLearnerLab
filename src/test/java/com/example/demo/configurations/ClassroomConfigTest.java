@@ -1,6 +1,8 @@
 package com.example.demo.configurations;
 
-import com.example.demo.*;
+import com.example.demo.classroom.Classroom;
+import com.example.demo.classroom.Instructors;
+import com.example.demo.classroom.Students;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,7 +11,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.junit.Assert.*;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)

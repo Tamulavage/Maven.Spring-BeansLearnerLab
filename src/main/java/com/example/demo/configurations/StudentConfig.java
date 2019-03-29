@@ -1,7 +1,7 @@
 package com.example.demo.configurations;
 
-import com.example.demo.Student;
-import com.example.demo.Students;
+import com.example.demo.classroom.Student;
+import com.example.demo.classroom.Students;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

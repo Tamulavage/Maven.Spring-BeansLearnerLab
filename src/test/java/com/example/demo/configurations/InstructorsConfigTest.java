@@ -1,8 +1,7 @@
 package com.example.demo.configurations;
 
-import com.example.demo.Instructor;
-import com.example.demo.Instructors;
-import javafx.beans.binding.When;
+import com.example.demo.classroom.Instructor;
+import com.example.demo.classroom.Instructors;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,8 +13,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
