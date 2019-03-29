@@ -2,6 +2,16 @@ package com.example.demo;
 
 public class Instructor extends Person implements Teacher {
 
+    public Double getTotalTimeTeached() {
+        return totalTimeTeached;
+    }
+
+    public void setTotalTimeTeached(Double totalTimeTeached) {
+        this.totalTimeTeached = totalTimeTeached;
+    }
+
+    private Double totalTimeTeached = 0.0;
+
     public Instructor(Long id, String name) {
         super(id, name);
     }

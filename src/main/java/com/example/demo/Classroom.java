@@ -1,6 +1,14 @@
 package com.example.demo;
 
 public class Classroom {
+    public Instructors getInstructors() {
+        return instructors;
+    }
+
+    public Students getStudents() {
+        return students;
+    }
+
     private Instructors instructors;
     private Students students;
 

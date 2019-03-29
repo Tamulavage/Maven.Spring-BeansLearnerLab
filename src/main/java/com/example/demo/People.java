@@ -31,8 +31,10 @@ public abstract class People<PersonType extends Person> implements Iterable<Pers
         this.personList.clear();
     }
 
-    // TODO: fill out implementation
     public void addAll(Iterable<PersonType> persons) {
+        for(PersonType ele:persons){
+            personList.add(ele);
+        }
 
     }
 
